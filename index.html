@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladislav Fleysner | Junior Python Backend Developer</title>
+
+    <meta name="description" content="Junior Python Backend Developer. Open to relocation to the Netherlands and EU. Experience with FastAPI, PostgreSQL and Docker.">
+    <link rel = "stylesheet" href = "styles/style.css">
 </head>
+
 <body>
-    <h1>Welcome to my first webpage</h1>
-    <p>I hope you will like this page.</p>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Vladislav Fleysner</h1>
+                    <div class="subtitle"
+                    data-ru="Junior Python Backend разработчик | Открыт к релокации в Нидерланды"
+                    data-en="Junior Python Backend Developer | Open to relocation to the Netherlands">
+                    Junior Python Backend Developer | Open to relocation to the Netherlands
+                    </div>
+
+                    <a href="cv.pdf" download class="button-link"
+                    data-ru="Скачать PDF резюме"
+                    data-en="Download PDF Resume">
+                    Download PDF Resume
+                    </a>
+            </div>
+        <button onclick="toggleLang()">RU</button>
+        </header>
+
+        <section>
+            <h2 data-ru="Профиль" data-en="Profile">Profile</h2>
+            <p
+            data-ru="Junior backend разработчик, ориентированный на стандарты европейской разработки: читаемость кода, документация, тестирование и Docker-окружение. Ищу первую позицию в Нидерландах с возможностью профессионального роста."
+            data-en="Junior backend developer aligned with European engineering standards: clean code, documentation, testing and Dockerized environments. Seeking an entry-level backend position in the Netherlands with long-term growth.">
+            Junior backend developer aligned with European engineering standards...
+            </p>
+        </section>
+
+        <section>
+            <h2 data-ru="Технологии" data-en="Tech Stack">Tech Stack</h2>
+            <div class="skills">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>REST API</span>
+                <span>Git</span>
+                <span>Linux</span>
+            </div>
+        </section>
+
+        <section>
+            <h2 data-ru="Проекты" data-en="Projects">Projects</h2>
+
+            <div class="repo-grid">
+
+                <div class="repo">
+                    <img src="https://opengraph.githubassets.com/1/yourusername/project1">
+                    <div>
+                        <strong>FastAPI REST Service</strong><br>
+                        Production-ready REST API with PostgreSQL & Docker.<br>
+                        <a href="https://github.com/yourusername/project1" target="_blank">
+                        github.com/yourusername/project1
+                        </a>
+                    </div>
+                </div>
+
+            <div class="repo">
+                <img src="https://opengraph.githubassets.com/1/yourusername/project2">
+                <div>
+                    <strong>Django Backend</strong><br>
+                    Authentication, admin panel, database models.<br>
+                    <a href="https://github.com/yourusername/project2" target="_blank">
+                    github.
+
+                    Флейснер Владислав Всеволодович GG 2004, [26.02.2026 11:37]
+                    com/yourusername/project2
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 data-ru="Информация" data-en="Additional Info">Additional Info</h2>
+            <p
+            data-ru="Готов к релокации в ЕС. Английский — B2. Открыт к onsite и hybrid формату работы в Нидерландах."
+            data-en="Eligible for EU relocation. English level B2. Open to onsite or hybrid roles in the Netherlands.">
+            Eligible for EU relocation...
+            </p>
+        </section>
+
+    <footer>
+        Email: your@email.com <br>
+        LinkedIn: linkedin.com/in/yourprofile <br>
+        GitHub: github.com/yourusername
+    </footer>
+    </div>
+
+<script>
+let lang="en";
+
+function toggleLang(){
+    lang = lang==="en"?"ru":"en";
+    document.documentElement.lang=lang;
+    document.querySelectorAll("[data-ru]").forEach(el=>{
+        el.textContent=el.getAttribute("data-"+lang);
+    });
+}
+</script>
+
 </body>
 </html>
