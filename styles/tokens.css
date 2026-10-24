@@ -1,0 +1,17 @@
+:root {
+  --paper: #f5f7f9; --surface: #ffffff; --ink: #16202e; --slate: #566274; --line: #d8dee6;
+  --blue: #1d4f9c; --on-blue: #ffffff; --red: #c4313a;
+  --code-bg: #101a2b; --code-ink: #dbe5f3; --code-dim: #7f8ea6;
+  --code-key: #8fb4ff; --code-str: #9fd9b0; --code-bool: #ff9aa0;
+  --f-head: "Manrope", system-ui, sans-serif;
+  --f-body: "Source Sans 3", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --maxw: 68rem;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0e1522; --surface: #142033; --ink: #e8eef7; --slate: #9aa8bb; --line: #26354c;
+    --blue: #7fa8f0; --on-blue: #0e1522; --red: #ff7b82; --code-bg: #09101c;
+  }
+}
