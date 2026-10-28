@@ -3,8 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vladislav — Python developer, Belgrade</title>
-<meta name="description" content="Portfolio of Vladislav (Fllleshka), Python developer in Belgrade: FastAPI services, integrations and desktop tools.">
+<title>Vladislav — Python developer (FastAPI, aiogram, asyncio), Belgrade</title>
+<meta name="description" content="Portfolio of Vladislav (Fllleshka), Python developer in Belgrade: FastAPI REST APIs, Telegram bots on aiogram, asyncio, SQLite, marketplace integrations and automation tools.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vladislav — Python developer (FastAPI, aiogram, asyncio), Belgrade">
+<meta property="og:description" content="FastAPI REST APIs, Telegram bots on aiogram, asyncio, SQLite, marketplace integrations and automation tools. Open to work in Serbia.">
+<meta property="og:url" content="https://fllleshka.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vladislav",
+  "alternateName": "Fllleshka",
+  "jobTitle": "Python developer",
+  "url": "https://fllleshka.github.io/",
+  "worksFor": { "@type": "Organization", "name": "Gless Group" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Belgrade", "addressCountry": "RS" },
+  "sameAs": [
+    "https://github.com/Fllleshka",
+    "https://www.linkedin.com/in/fleysnervlad",
+    "https://t.me/fleshkaomsk"
+  ],
+  "knowsAbout": [
+    "Python", "FastAPI", "REST API", "aiogram", "Telegram bots", "asyncio", "SQLite",
+    "Pydantic", "Selenium", "OpenCV", "Tkinter", "Flutter", "API integrations", "Process automation"
+  ]
+}
+</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +59,7 @@
     <div class="hero-text">
       <h1>Vladislav</h1>
       <p class="role" data-i18n="hero.role">Python developer</p>
-      <p class="lead" data-i18n="hero.lead">I build FastAPI services, platform integrations and desktop tools in Python. Based in Belgrade and open to new roles.</p>
+      <p class="lead" data-i18n="hero.lead">I build FastAPI services, Telegram bots and automation tools in Python: marketplace price feeds, API integrations and async schedulers. Based in Belgrade and open to new roles.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#contact" data-i18n="hero.contact">Get in touch</a>
         <a class="btn" href="#projects" data-i18n="hero.projects">See my projects</a>
@@ -46,13 +71,25 @@
 
   <section class="wrap section" id="projects">
     <h2 data-i18n="projects.title">Projects</h2>
-    <p class="section-lead" data-i18n="projects.lead">Selected repositories from GitHub.</p>
+    <p class="section-lead" data-i18n="projects.lead">Selected repositories from GitHub: what each one does and which technologies it uses.</p>
     <ul class="projects" id="project-list"></ul>
   </section>
 
   <section class="wrap section" id="skills">
     <h2 data-i18n="skills.title">Skills</h2>
+    <p class="section-lead" data-i18n="skills.lead">Click a skill to see the projects where I used it. The number shows how many projects use it.</p>
     <div class="skills" id="skills-list"></div>
+    <div class="skill-detail" id="skill-detail" aria-live="polite" hidden></div>
+    <noscript>
+      <p>Python, FastAPI, Pydantic, REST API, OpenAPI / Swagger, Uvicorn, asyncio, aiogram, Telegram Bot API, aiosqlite, SQLite, SQL,
+      XML / YML, openpyxl, Selenium, PyAutoGUI, Pillow, OpenCV, scikit-image, MoviePy, Tkinter, Dart, Flutter, pytest, Git, GitHub.</p>
+      <p>Projects: <a href="https://github.com/Fllleshka/glessgroupfastapi">glessgroupfastapi</a>,
+      <a href="https://github.com/Fllleshka/glessgroupmainprogram">GlessGroupMainProgram</a>,
+      <a href="https://github.com/Fllleshka/postingMediaInChannel">postingMediaInChannel</a>,
+      <a href="https://github.com/Fllleshka/BotGless2">BotGless2</a>,
+      <a href="https://github.com/Fllleshka/GlessGroupDonloadImages">GlessGroupDonloadImages</a>,
+      <a href="https://github.com/Fllleshka/kosh2_1">kosh2_1</a>.</p>
+    </noscript>
   </section>
 
   <section class="wrap section" id="path">
